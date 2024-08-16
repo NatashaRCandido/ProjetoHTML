@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 0;
+            background: #444;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Guia de sabores </h1>
+    <nav>
+        <ul>
+            <li><a href="#Quem somos">Quem somos </a></li>
+            <li><a href="#Indicações">Indicações</a></li>
+            <li><a href="#gcgccc">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="Quem somos">
+    <h2>Quem somos </h2>
+    <p>Bem-vindo ao Guia de sabores , o seu guia definitivo para descobrir os melhores lugares para apreciar a gastronomia mundial. Aqui, você encontrará recomendações detalhadas de restaurantes e mercados que oferecem uma verdadeira experiência culinária, desde as tradicionais cozinhas europeias até os sabores exóticos do Japão, da Coreia e da Tailândia. Seja você um amante dos pratos clássicos da Europa ou um entusiasta das especiarias e técnicas únicas da culinária asiática, nosso site foi criado para ajudar você a encontrar as melhores opções de refeições, explorando cada canto do mundo com o paladar. Navegue por nossas seções, descubra novos destinos gastronômicos e prepare-se para uma jornada saborosa!.</p>
+</section>
+
+<section id="indicações">
+    <h2>Indicaçoes</h2>
+    <ul>
+        <li>imagem</li>
+        <li>imagem</li>
+        <li>imagem</li>
+        <li>imagem</li>
+        <li>iamgem</li>
+    </ul>
+</section>
+
+<section id="about">
+    <h2>Guia de sabores </h2>
+    <p>jbkfjkjfg.</p>
+</section>
+<p>.</p>
+
+
+
+<footer>
+    <p> Muito obrigado por nos acessar .</p>
+</footer>
+
+</body>
+</html>
