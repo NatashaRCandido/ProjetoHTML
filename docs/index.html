@@ -55,14 +55,42 @@
             padding: 20px;
         }
         footer {
-            text-align: center;
-            padding: 1rem 0;
-            background: #D98F4E;
-            color: white;
-            width: 100%;
-            box-sizing: border-box;
-            margin: 0;
+            background-color: #0E1626; 
+            padding: 20px; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            color: #fff;
             
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px; 
+            box-sizing: border-box; 
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .whatsapp-icon {
+            height: 2em; 
+            width: 2em; 
+            margin-right: 10px; 
+        }
+        
+        
+        .signup-info {
+            text-align: center; 
+        }
+        
+       
+        .signup-info nav p {
+            margin-top: 10px; 
         }
         @font-face {
             font-family: 'Billing-Lottre';
@@ -124,6 +152,14 @@ input:hover{
     left: 5%;
     top: -2%;
         }
+        #formulario01:visited{
+            color: #fff;
+        }
+        #formulario01:hover{
+        color: #F28907;
+        text-decoration: underline;
+        }
+
     </style>
 </head>
 <body background="imagens/fundo6.jpg"></body>
@@ -262,13 +298,23 @@ input:hover{
 
 <section id="Contato">
 
-<footer>
-    <img src = "imagens/Dtafalonso-Android-L-WhatsApp.48.png">
-    <nav>
-        <p>Entre em contato conosco através do whatsapp</p>
-    </nav>
-    <p> (19)999999999.</p>
-</footer>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <img src="imagens/Dtafalonso-Android-L-WhatsApp.48.png" alt="WhatsApp" class="whatsapp-icon">
+                <p>(19) 99899-9899
+                    <br>
+                    Entre em contato conosco através do WhatsApp
+                </p>               
+            </div>
+            <div class="signup-info">
+                <p>Quer divulgar seu site?</p>
+                <div>
+                    <p id="formulario01"><a href="formulario.html">clique aqui</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </section>
 </body>
 </html
