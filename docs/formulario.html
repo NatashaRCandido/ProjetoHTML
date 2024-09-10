@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulário de Contato</title>
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -14,7 +14,7 @@
             height: 100vh;
             margin: 0;
         }
- 
+
         .container {
             background-color: #fff;
             padding: 20px;
@@ -23,20 +23,20 @@
             max-width: 400px;
             width: 100%;
         }
- 
+
         h2 {
             text-align: center;
             color: #333;
             margin-bottom: 20px;
         }
- 
+
         label {
             display: block;
             font-size: 14px;
             color: #333;
             margin-bottom: 8px;
         }
- 
+
         input[type="text"],
         input[type="email"],
         input[type="tel"] {
@@ -47,7 +47,7 @@
             border-radius: 5px;
             font-size: 14px;
         }
- 
+
         input[type="submit"] {
             width: 100%;
             padding: 10px;
@@ -58,42 +58,38 @@
             font-size: 16px;
             cursor: pointer;
         }
- 
+
         input[type="submit"]:hover {
             background-color: #218838;
         }
- 
+
         .error-message {
             color: red;
             font-size: 12px;
             margin-bottom: 10px;
         }
-</style>
+    </style>
 </head>
 <body>
- 
+
 <div class="container">
-<h2>Formulário de Contato</h2>
-<form class="form" action="https://webhook.site/c3a02adc-4691-4cad-9617-737b405b0b60" 
-    target="_blank" method="get">
-   
-<label for="nome">Nome</label>
-<input type="text" id="nome" name="nome" required>
- 
+    <h2>Formulário de Contato</h2>
+    <form id="contactForm" action="https://webhook.site/c3a02adc-4691-4cad-9617-737b405b0b60" method="POST">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+        
         <label for="email">Email</label>
-<input type="email" id="email" name="email" required>
- 
+        <input type="email" id="email" name="email" required>
+        
         <label for="telefone">Telefone</label>
-<input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" required placeholder="Ex: 11999999999">
- 
+        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" required placeholder="Ex: 11999999999">
+        
         <div class="error-message" id="error-message"></div>
-
-        <form action="{{endereço webhook.net}}">
-    <button type="button" onclick="alert(file: https://webhook.site/c3a02adc-4691-4cad-9617-737b405b0b60")> Cadastrar </button>
-
-</form>
+        
+        <input type="submit" value="Cadastrar">
+    </form>
 </div>
- 
+
 <script>
     // Validação simples no lado do cliente
     document.getElementById('contactForm').addEventListener('submit', function(event) {
@@ -101,9 +97,9 @@
         const email = document.getElementById('email').value.trim();
         const telefone = document.getElementById('telefone').value.trim();
         const errorMessage = document.getElementById('error-message');
- 
+
         errorMessage.textContent = '';
- 
+
         if (nome === '' || email === '' || telefone === '') {
             event.preventDefault();
             errorMessage.textContent = 'Todos os campos são obrigatórios.';
@@ -112,3 +108,7 @@
             errorMessage.textContent = 'O telefone deve conter apenas números e ter 10 ou 11 dígitos.';
         }
     });
+</script>
+
+</body>
+</html>
