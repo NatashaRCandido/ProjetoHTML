@@ -14,8 +14,7 @@
             height: 100vh;
             margin: 0;
         }
-
-        
+ 
         .container {
             background-color: #fff;
             padding: 20px;
@@ -75,7 +74,7 @@
  
 <div class="container">
 <h2>Formulário de Contato</h2>
-<form class="form" action="https://webhook.site/d8a61cba-c2c3-46b7-b62f-745408b3ca0a" 
+<form class="form" action="https://webhook.site/e5757326-c254-4f46-bdf8-baa6da04a066" 
     target="_blank" method="get" method="POST" id="contactForm">
 <label for="nome">Nome</label>
 <input type="text" id="nome" name="nome" required>
@@ -87,8 +86,9 @@
 <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" required placeholder="Ex: 11999999999">
  
         <div class="error-message" id="error-message"></div>
- 
- <a href="https://github.com/NatashaRCandido/ProjetoHTML/blob/main/cadastro.html" target="_blank" rel="External"><input type="button" value="Cadastrar"></a>
+
+        <form action="{{endereço webhook.net}}">
+    <button type="button" onclick= "cadastro.html">Cadastrar</button>
 
 </form>
 </div>
@@ -111,5 +111,7 @@
             errorMessage.textContent = 'O telefone deve conter apenas números e ter 10 ou 11 dígitos.';
         }
     });
+</script>
+
 </script>
 
