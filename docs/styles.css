@@ -115,14 +115,27 @@ font-weight: bolder
 font-weight: bolder
  }
 .logorestaurantes{
-    border-radius: 50%;
+    border-radius: 15%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
     width: 225px;
     height: 225px;    
+}
+.logorestaurantes:hover {
+    transform: scale(1.05);
 }
 .biorestaurantes{
     text-align: justify;    
 }
-
+.biorestaurantes p {
+    line-height: 1.6; 
+    margin: 10px 0; 
+    color: #555;
+}
+.biorestaurantes h3 {
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
 a{
     text-decoration: none;
 }
