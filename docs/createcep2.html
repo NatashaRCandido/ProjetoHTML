@@ -1,0 +1,35 @@
+function restaurante_proximo(cep) {
+    const contentUrl = 
+    `https://viacep.com.br/ws/${cep}/json/`;
+
+        //Etapa 1: criar requisição
+    var xhr;
+    if (window.XMLHttpRequest) {
+      xhr = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject) {
+      xhr = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    
+    //Etapa 2: tratar estados do ajax
+    xhr.onreadystatechange=function() {
+      if(xhr.readyState == 4) {
+        const dados = JSON.parse(xhr.responseText);
+        preencher_dados(dados);
+
+    }
+    }
+    
+    //Etapa 3: enviar requisição
+    xhr.open("GET", contentUrl, true);
+    xhr.send(null);
+  }
+
+  function preencher_dados(dados){
+    document.address.cidade.value= dados.localidade;
+    document.address.bairro.value= dados.bairro;
+    document.address.estado.value= dados.estado;
+    document.address.cidade.value= dados.localidade;
+    document.address.logradouro.value= dados.logradouro;
+
+  }
