@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Restaurante Proximo</title>
+</head>
+
+<body>
+  <form name="address">
+    <p>
+      <label>CEP:
+        <input type="text" name="cep" onchange="restaurante_proximo(this.value)" />
+      </label>
+    </p>
+    <p>
+      <label>Logradouro:
+        <input type="text" name="logradouro" />
+      </label>
+    </p>
+    <p>
+      <label>Bairro:
+        <input type="text" name="bairro" />
+      </label>
+    </p>
+    <p>
+      <label>Cidade:
+        <input type="text" name="cidade" />
+      </label>
+    </p>
+    <p>
+      <label>Estado:
+        <input type="text" name="estado" />
+      </label>
+    </p>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
